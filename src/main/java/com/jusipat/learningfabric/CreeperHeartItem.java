@@ -17,10 +17,10 @@ public class CreeperHeartItem extends Item {
 	@Override
 	public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
 		if(hand ==Hand.MAIN_HAND) {
-			System.out.println("Ssssssss....");
+			System.out.println("On hand");
 		}
 		if(hand ==hand.OFF_HAND) {
-			System.out.println("Off hand sssss.....");
+			System.out.println("Off hand");
 		}
 		return super.use(world, playerEntity, hand);
 	}

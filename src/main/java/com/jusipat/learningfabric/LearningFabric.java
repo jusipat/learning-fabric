@@ -13,11 +13,17 @@ import net.minecraft.util.registry.Registry;
 
 public class LearningFabric implements ModInitializer {
 
-	private static final Item CREEPER_HEART = new CreeperHeartItem(new Item.Settings().group(ItemGroup.MATERIALS).maxCount(32));
+	public static final String MOD_ID = "lf";
+
+	//Blocks
 	private static final Block GUNPOWDER_BLOCK = new GunpowderBlock(FabricBlockSettings.of(Material.SOIL));
+
+
+	//Items
+	private static final Item CREEPER_HEART = new CreeperHeartItem(new Item.Settings().group(ItemGroup.MATERIALS).maxCount(32));
 	private static final Item GUNPOWDER_BLOCK_ITEM = new BlockItem(GUNPOWDER_BLOCK, new Item.Settings().group(ItemGroup.MATERIALS));
 
-	public static final String MOD_ID = "lf";
+
 
 	@Override
 	public void onInitialize() {
