@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "": {"model": "lf:block/gunpowder_block"}
+  }
+
+}
